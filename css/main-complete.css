@@ -1,0 +1,121 @@
+@charset "utf-8";
+/*****************************
+Colours
+main background: #222;
+content background:#444;
+footer background: #333;
+borders on header and main: #666;
+main text: #d4d4d4;
+header text: #eee;
+footer text: #999;
+anchor text: gold;
+anchor hover: #fff;
+text shadows - #000 (bottom right) and gold (top left)
+
+Fonts
+'Helvetica Neue', Calibri, Verdana, sans-serif;
+
+Images
+http://griffis.edumedia.ca/mad9013/html-only/saturn.v1.jpg
+******************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 3vh; /* default font-size = 1.0rem */
+    background-color: #222;
+    font-family: 'Helvetica Neue', Calibri, Verdana, sans-serif;
+    line-height: 1.5rem;
+}
+
+h1{
+  padding: 200px 0;
+  text-align: center;
+  font-size: 5rem;
+  color: #eee;
+  text-shadow: 1px 1px 1px #000, 2px 2px 2px gold;
+}
+
+h3{
+  line-height: 4rem;
+  font-size: 1.5rem;
+  color: #eee;
+}
+
+p{
+  color: #eee;
+  line-height: 3rem;
+}
+
+nav a, nav a:link, nav a:visited{
+  color: gold;
+  text-decoration: none;
+  margin-left: 20px;
+
+}
+
+nav a:hover, nav a:active{
+  color: #fff;
+
+}
+
+nav ul{
+  text-align: center;
+  border-top: 5px solid grey;
+  border-bottom: 10px solid grey;
+}
+
+nav li{
+  padding-left: 100px;
+  line-height: 2rem;
+  display: inline-block;
+}
+
+nav li:first-of-type{
+  padding-left: 0px;
+}
+
+#wrapper{
+  background-color: #444;
+  margin: 0 100px;
+}
+
+#masthead{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: #666;
+  background-image: url("https://github.com/RajeshAlgonquin/Saturn-HTML/blob/gh-pages/img/saturn.v1.jpg?raw=true");
+  height: 400px;
+  max-height: 450px;
+  width: 100%;
+}
+
+#main{
+/*  background-color: #222;*/
+  padding: 20px;
+  color: #d4d4d4;
+  border: #666;
+}
+
+#main p:first-of-type{
+  line-height: 1.5rem;
+  padding-bottom: 20px;
+}
+
+#footer{
+  background-color: #333;
+  padding: 20px;
+}
+
+#footer p{
+  font-size: 1rem;
+  color: #999;
+  line-height: 1rem;
+}
+
+#footer a{
+  color: gold;
+}
